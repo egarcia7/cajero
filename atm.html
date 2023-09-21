@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CAJERO!!!</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<h1>Cajero automatico</h1>
+	<div class="container--imagen">
+		<img src="./assets/img/cajero.png" />
+	</div>
+	
+	<div class="container--opciones">
+		<h2>Selecciona la cantidad de dinero a retirar</h2>
+
+		<!-- <div id="radio">
+			<input type="radio" id="cinco" name="dinero" value="5">
+			<label for="cinco">5</label>
+			<input type="radio" id="diez" name="dinero" value="10">
+			<label for="diez">10</label>
+			<input type="radio" id="veinte" name="dinero" value="20">
+			<label for="veinte">20</label>
+			<input type="radio" id="cincuenta" name="dinero" value="50">
+			<label for="cincuenta">50</label>
+			<input type="radio" id="cien" name="dinero" value="100">
+			<label for="cien">100</label>
+			<input type="radio" id="quinientos" name="dinero" value="500">
+			<label for="quinientos">500</label>
+		</div> -->
+
+		<div>
+			<!-- <input type="radio" name="diferente" id="diferente">
+			<label for="diferente">Ingresa un valor diferente</label> -->
+			<input type="number" min="5" step="5" placeholder="Ingresa la cantidad" id="dinero" />
+		</div>
+		<input type="button" value="Extraer" id="extraer" />
+		<p id="resultado"></p>
+	</div>
+		
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script type="text/javascript" src="./js/Billete.js"></script>
+	<script type="text/javascript" src="./js/cajero.js"></script>
+	<!-- <script type="text/javascript" src="./js/test.js"></script> -->
+</body>
+</html>
